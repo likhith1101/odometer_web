@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Odometer Application</title>
+</head>
+<body>
+    <h1>Odometer</h1>
+    <form method="post">
+        <input type="number" name="inputNumber" placeholder="Enter a number">
+        <button type="submit" name="action" value="next">Next Reading</button>
+        <button type="submit" name="action" value="previous">Previous Reading</button>
+    </form>
+    <p>Current Reading: <span th:text="${currentReading}"></span></p>
+    <p>Next Reading: <span th:text="${nextReading}"></span></p>
+    <p>Previous Reading: <span th:text="${previousReading}"></span></p>
+</body>
+</html>
